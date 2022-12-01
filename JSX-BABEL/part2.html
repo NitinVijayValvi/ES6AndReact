@@ -1,0 +1,184 @@
+<html>
+    <head>
+        <title>Part 2</title>
+
+    <style>
+        .tweet{
+            border:1px solid #ccc;
+            width:580px;
+            min-height:80px;
+            padding:10px;
+            display:flex;
+            font-family:"Helvetica", arial, sans-sans-serif;
+        }
+        .name{
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            margin-right: 0.3em;
+        }
+
+        .handle{
+            color:#8899a6;
+            font-size: 15px;
+        }
+
+        .time{
+            padding-left: 0.3em;
+            color: #8899a6;
+        }
+
+        .time::before{
+            content: "\00b7";
+            padding-right: 0.3em;
+        }
+
+        .buttons{
+            margin-top: 10px;
+            margin-left: 2px;
+            font-size: 1.4em;
+            color: #aab8c2;
+        }
+
+        .buttons i {
+            width:80px;
+
+        }
+
+        .avatar{
+            width: 48px;
+            height: 48px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <b>1. Define a Tweet component which takes as props the username of the user who 
+            wrote the tweet, the name of the user who wrote the tweet, the date of the 
+            tweet, and the message being tweeted.
+            2. Create an App component that renders at least three tweets.
+            3. Style your Tweet component!</b>
+<br>
+<br>
+        <div id = "root">
+
+        </div>
+       
+        <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- REACT DOM LIBRARY -->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <script src ="https:kit.fontawesome.com/d6435f23e1.js" crossorigin="anonymous"></script>
+        <script type="text/babel">
+
+
+
+
+
+            function Message(){
+                return(
+                <div className="message">
+                    Hello I am Full Stack Java Developer
+                </div>
+                );
+            };
+
+            function NameWithHandle(props){
+                return (
+                    <div>
+                    <span className="name">{props.name}</span>
+                    <span className="handle">{props.handlename}</span>
+                    </div>
+                    );
+            };
+
+            const Time = () => (
+               <span className="time">1 Dec 2022</span>
+            );
+
+            const LikeButton = () => (
+                <i className = "fa fa-heart like-button"/>
+            );
+
+            const CommentButton = () => (
+                <i className="fa fa-comment"/>
+            );
+
+            const RetweetButton = () => (
+                <i className="fa fa-retweet retweet-button"/>
+            );
+
+            function Tweet(props) {
+                return (
+                    <div>
+                        
+                    <div className = "tweet">
+                        <Avatar/>
+                        <div className="content">
+                            <NameWithHandle
+                            name="Nitin Valvi"
+                            handlename="@nitinvalvi"
+                            />
+                            <Time/>
+                            <Message/>
+                            <div className="buttons">
+                                <LikeButton/>
+                                <CommentButton/>
+                                <RetweetButton/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className ="tweet">
+                        <Avatar/>
+                        <div className="content">
+                            <NameWithHandle
+                            name="Kumar Japtap"
+                            handlename="@kumarjagtap"
+                            />
+                            <Time/>
+                            <Message/>
+                            <div className="buttons">
+                                <LikeButton/>
+                                <CommentButton/>
+                                <RetweetButton/>
+                            </div>
+                         </div>
+                        </div>    
+                 <div className= "tweet">
+                    <Avatar/>
+                            <div className="content">
+                            <NameWithHandle
+                            name="Bhushan Patil"
+                            handlename="@bhushanpatil"
+                            />
+                            <Time/>
+                            <Message/>
+                            <div className="buttons">
+                                <LikeButton/>
+                                <CommentButton/>
+                                <RetweetButton/>
+                            </div>
+                        </div>    
+                        </div>
+                    </div>
+                );
+            }
+
+            function Avatar() {
+                return (
+                    <img src="C:\Users\nitin.valvi\Desktop\bird.jpg" className="avatar" alt="avatar"/>
+                );
+            }
+
+            ReactDOM.render(
+                <Tweet/>,document.querySelector('#root')
+                );  
+            
+        </script>
+    
+    </body>
+
+</html>
