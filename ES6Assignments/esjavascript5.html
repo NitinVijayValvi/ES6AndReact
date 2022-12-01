@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>ECMA script</title>
+    </head>
+    <body>
+        <h1>ES6 ASSIGNMENT 5</h1>
+        <script type="text/javascript">
+                   function checkAlphanumeric(s) {
+                            return s.match(/^[A-Za-z0-9]+$/);
+                        }
+                    var ispalindrome = function (s) {
+                    var j = s.length - 1;
+                    for (var i = 0; i < j; i++, j--) {
+                        while (i < j && !checkAlphanumeric(s[i])) {
+                             i++;
+                     }
+                        while (i < j && !checkAlphanumeric(s[j])) {
+                             j--;
+                     }
+                    if (i < j && s[i].toLowerCase() !== s[j].toLowerCase()) {
+                            return false;
+                        }
+                    }
+                    return true;
+                };
+                if (ispalindrome("doctor") == true) {
+                document.write("string is palindrome");
+                }
+                else {
+                document.write("not palindrome");
+                }
+      
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>ECMA script</title>
+    </head>
+    <body>
+        <h1>ES6 ASSIGNMENT 4</h1>
+        <script type="text/javascript">
+      var arraysort = function (arr) {
+    var a;
+    var length = arr.length;
+    for (var i = 0; i < length; i++) {
+        for (var j = 0; j < length; j++) {
+            if (arr[j] > arr[j + 1]) {
+                a = [arr[j + 1], arr[j]], arr[j] = a[0], arr[j + 1] = a[1];
+            }
+        }
+    }
+    return arr;
+};
+console.log(arraysort([11, 2, 15, 34, 22, 27, 9]));
+document.write(arraysort([11, 2, 15, 34, 22, 27, 9]));      
+        </script>
+    </body>
+</html>

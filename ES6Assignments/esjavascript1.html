@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Ecma script</title>
+    </head>
+    <body>
+        <h1>ES6 ASSIGNMENT 1</h1>
+        <script type="text/javascript">
+            // let data = [10,6,2,20,7,45];
+            // let result  = data.find(function(item){
+            //     return item < 20 ;
+            // })
+
+            // console.warn(result)
+            var temp;
+            var min = function (x, y, z) {
+            {
+            if (x < y) {
+                if (x < z) {
+                    temp = x;
+                }
+                else     {
+                    temp = z;
+                }
+            }
+            else {
+                if (y < z) {
+                    temp = y;
+                }
+                else {
+                    temp = z;
+                }
+            }   
+                return temp;
+            }
+            };
+         //  console.warn(min(20, 30, 40));
+            document.writeln("output is : "+min(20,30,40));
+        </script>
+    </body>
+</html>
