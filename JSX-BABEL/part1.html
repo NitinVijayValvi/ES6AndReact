@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Part 1</title>
+    </head>
+    <body>
+        <div id = "root">
+
+        </div>
+        <!-- REACT LIBRARY -->
+    <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+    <!-- REACT DOM LIBRARY -->
+    <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+    <!-- BABEL LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    
+        <script type="text/babel">
+            const FirstComponent = ()=>{
+                return <h1>My very First Component</h1>
+            }
+
+            const SecondComponent = ()=>{
+                return <h1>My Second Component</h1>
+            }
+
+            
+            const NamedComponent = () =>{
+                name= "nitin";
+                return (<p>
+                    My name is : {name}</p>) ;
+             }
+
+            ReactDOM.render(
+            <div>
+               <FirstComponent/>
+               <SecondComponent/>
+               <NamedComponent/>
+             </div>
+            ,document.getElementById("root")
+            );
+        </script>
+    
+    </body>
+
+</html>
