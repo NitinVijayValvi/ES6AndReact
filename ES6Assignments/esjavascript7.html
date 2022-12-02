@@ -14,7 +14,7 @@
     }
     return Student;
 }());
-var sortStudMarks = function (allStud) {
+var sortStudMarks = (allStud) => {
     for (var i = 0; i < allStud.length; i++) {
         for (var j = i + 1; j < allStud.length; j++) {
             if (allStud[i].totalmarks > allStud[j].totalmarks) {
