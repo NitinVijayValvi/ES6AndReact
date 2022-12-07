@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Charmander",
+        "type": "fire",
+        "image": "/images/charmender.jpg"
+        },
+    {
+    "id": 2,
+    "name": "Squirtle",
+    "type": "water",
+    "image": "/images/squirtle.jpg"
+    },
+    {
+    "id": 3,
+    "name": "Butterfree",
+    "type": "flying",
+    "image": "/images/butterfree.jpg"
+    },
+    {
+    "id": 4,
+    "name": "Rattata",
+    "type": "normal",
+    "image": "/images/rattata.jpg"
+    },
+    {
+    "id": 5,
+    "name": "Metapod",
+    "type": "bug",
+    "image": "/images/metapod.jpg"
+    }
+]
